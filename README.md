@@ -1,12 +1,18 @@
 # go-daemon [![Build Status](https://travis-ci.org/sevlyar/go-daemon.png?branch=master)](https://travis-ci.org/sevlyar/go-daemon) [![GoDoc](https://godoc.org/github.com/sevlyar/go-daemon?status.png)](https://godoc.org/github.com/sevlyar/go-daemon)
  
-Library for writing system daemons in golang.
+Library for writing system daemons in Go.
+
+## Features
+* Goroutine-safe daemonization
+* Out of box a work with a pid-file and log-file
+* Easy handling of system signals
+* The control of a daemon
 
 ## Installation
 
 	go get github.com/sevlyar/go-daemon
 
-## Idea
+## How it works
 
 ```go
 func main() {
@@ -29,5 +35,4 @@ func main() {
 ## History
 
 ### 14.01.12
-* released new major version, old version moved to github.com/sevlyar/go-daemon/oldapi
-
+* released new version, old version moved to github.com/sevlyar/go-daemon/oldapi
